@@ -1,0 +1,2 @@
+rootProject.name = 'svc-akdemia-api-hex'
+include 'domain','application','infrastructure'

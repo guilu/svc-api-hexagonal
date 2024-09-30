@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+
+}
+
+dependencies {
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.1'
+    testImplementation 'org.mockito:mockito-core:3.11.2'
+}
+
+
+test {
+    useJUnitPlatform()  // Asegúrate de usar JUnit 5 si tus tests están basados en JUnit 5
+}
